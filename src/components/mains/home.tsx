@@ -7,6 +7,10 @@ const StyledWrapper=styled.div`
     align-items: center;
     background-color: grey;
     color: white;
+    margin: 3vh;
+    width: 100%;
+    height: 100vh;
+    color: white;
 `;
 const StyledHome=styled.main`
     margin: 3vh;
