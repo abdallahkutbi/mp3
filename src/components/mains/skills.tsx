@@ -10,10 +10,8 @@ const StyledSkills=styled.main`
 
 const SkillsContainer = styled.div`
   display: flex;
-  gap: 2rem;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap; /* Allows wrapping on small screens */
-  margin-top: 2rem;
 `;
 
 const SkillCategory = styled.div`
