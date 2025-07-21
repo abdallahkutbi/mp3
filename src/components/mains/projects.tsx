@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useState } from "react";
+
 
 const StyledProjects=styled.main`
     margin: 3vh;
@@ -7,15 +9,26 @@ const StyledProjects=styled.main`
     color: white;
 `;
 
+const StyledCalculator=styled.div`
+    width: 100%;
+    height: 100%;
+    color: white;
+`;
+
 
 export default function Projects(){
+    const [input1, setInput1] = useState('');
+    const [input2, setInput2] = useState('');
+    const [result, setResult] = useState(0);
+
+
     return(
         <StyledProjects id="main-content">
             <h1 id="main-title">Projects:</h1>
             <br />
             <hr />
             <div>
-                <h2>SepiaAI | Java, Sepia API, Docker | January 2025 – Present: </h2> <br />
+                <h2>SepiaAI | Java, Sepia API, Docker | January 2025 – May 2025: </h2> <br />
                 <li>Developed an autonomous AI agent for a stealth-based mission in SEPIA, navigating enemy territory to destroy enemy bases and extract resources.</li>
                 <li>Implemented Dijkstra’s algorithm to efficiently compute the shortest path for resource gathering and optimal movement.</li>
                 <li>Designed a Hill Climbing AI to identify the highest and lowest terrain points, enhancing strategic positioning and route optimization.</li>
@@ -34,6 +47,31 @@ export default function Projects(){
                 <br />
                 <br />
                 <hr />
+
+
+
+<StyledCalculator>
+        <div id="calculator">
+            <h2>Calculator:</h2>
+            <div id="calc-container">
+              <div id="calc-row">
+                <input id="num1" type="number" placeholder="First #"  value={input1} onChange={(e)=>setInput1(e.target.value)}/>
+                <input id="num2" type="number" placeholder="Second #" value={input2} onChange={(e)=>setInput2(e.target.value)}/>
+              </div>
+              <br />
+              <div id="calc-row">
+                <button onClick={()=>{setResult(Number(input1)+Number(input2))}}>+</button>
+                <button onClick={()=>{setResult(Number(input1)-Number(input2))}}>−</button>
+                <button onClick={()=>{setResult(Number(input1)*Number(input2))}}>*</button>
+                <button onClick={()=>{setResult(Number(input1)/Number(input2))}}>/</button>
+                <button onClick={()=>{setResult(Math.pow(Number(input1),Number(input2)))}}>^</button>
+                <button onClick={()=>{setResult(0); setInput1(''); setInput2('');}}>Clear</button>
+              </div>
+              <br />
+              <h3 id="result" style={{color: result < 0 ? 'red' : 'white'}}>{result}</h3>
+            </div>
+          </div>
+        </StyledCalculator>
 
 
             </div>
