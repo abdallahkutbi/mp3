@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledProjects=styled.main`
-    width: 70%;
+    margin: 3vh;
+    width: 100%;
     height: 100vh;
     color: white;
 `;

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledSkills=styled.main`
-    width: 70%;
+    margin: 3vh;
+    width: 100%;
     height: 100vh;
     color: white;
 `;
@@ -16,7 +17,7 @@ const SkillsContainer = styled.div`
 `;
 
 const SkillCategory = styled.div`
-  min-width: 180px;
+min-width: 180px;
   /* Optional: add a border or background for clarity */
   /* border: 1px solid #ccc; */
   /* background: #f9f9f9; */

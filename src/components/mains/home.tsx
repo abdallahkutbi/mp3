@@ -9,7 +9,8 @@ const StyledWrapper=styled.div`
     color: white;
 `;
 const StyledHome=styled.main`
-    width: 70%;
+    margin: 3vh;
+    width: 100%;
     height: 100vh;
     color: white;
 `;

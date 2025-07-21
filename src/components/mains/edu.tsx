@@ -1,6 +1,15 @@
+import styled from "styled-components";
+
+const StyledEducation=styled.main`
+    margin: 3vh;
+    width: 100%;
+    height: 100vh;
+    color: white;
+`;
+
 export default function Edu(){
     return(
-        <main id="main-content">
+        <StyledEducation id="main-content">
             <h1 id="main-title">Educational Background:</h1>
             <div>
                 <h2><strong>B.A. Computer Science</strong>| <em><u>Boston University</u></em></h2>
@@ -22,6 +31,6 @@ export default function Edu(){
                     <li>CS440</li>
                 </ul>
             </div>
-        </main>
+        </StyledEducation>
     );
 }

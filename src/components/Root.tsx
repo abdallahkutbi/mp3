@@ -11,8 +11,6 @@ import Skills from "./mains/skills.tsx";
 import Contact from "./mains/contact.tsx";
 
 const Wrapper=styled.div`
-    width: 80vw;
-    margin: 0 auto;
     background: grey;
     color: white;
 `;
