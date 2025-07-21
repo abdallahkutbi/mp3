@@ -1,22 +1,5 @@
 import styled from "styled-components";
 
-const SkillsContainer = styled.div`
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap; /* Allows wrapping on small screens */
-  margin-top: 2rem;
-`;
-
-const SkillCategory = styled.div`
-  min-width: 180px;
-  /* Optional: add a border or background for clarity */
-  /* border: 1px solid #ccc; */
-  /* background: #f9f9f9; */
-  padding: 1rem;
-  border-radius: 8px;
-`;
-
 const StyledWrapper=styled.div`
     display: flex;
     flex-direction: row;
